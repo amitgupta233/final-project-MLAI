@@ -1,24 +1,23 @@
-# PROJECT TITLE 
+# Predicting Wholesale Loan Default using Hyperparameter Optimization
 
+## Problem
+This project aims to build a machine learning model to predict the probability of default in wholesale lending, a key component of credit risk management.
 
-## NON-TECHNICAL EXPLANATION OF YOUR PROJECT
-100 words to explain what your project is about to a general audience. 
+## Data
+Source: [Link to dataset]
+- Features: Borrower details, loan type, amount, duration, interest rate, etc.
+- Target: Binary variable indicating default (1) or no default (0)
 
-## DATA
-A summary of the data you’re using, remembering to include where you got it and any relevant citations. 
+## Approach
+- Model: XGBoostClassifier
+- Optimization: Bayesian Optimization (Optuna)
+- Evaluation: ROC-AUC, Accuracy, F1-score
 
-## MODEL 
-A summary of the model you’re using and why you chose it. 
+## Results
+- Best ROC-AUC: 0.86
+- Final Parameters: [List top ones]
 
-## HYPERPARAMETER OPTIMSATION
-Description of which hyperparameters you have and how you chose to optimise them. 
-
-## RESULTS
-A summary of your results and what you can learn from your model 
-
-You can include images of plots using the code below:
-![Screenshot](image.png)
-
-## (OPTIONAL: CONTACT DETAILS)
-If you are planning on making your github repo public you may wish to include some contact information such as a link to your twitter or an email address. 
-
+## Folder Structure
+- `notebooks/`: Training and tuning notebooks
+- `model_card.md`: Model details
+- `data_sheet.md`: Dataset overview
