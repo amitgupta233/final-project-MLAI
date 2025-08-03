@@ -1,5 +1,9 @@
 # Predicting Wholesale Loan Default using Hyperparameter Optimization
 
+## 📝 Project Summary (Non-Technical)
+
+This project builds a machine learning model to predict whether a borrower will default on a loan, using historical Lending Club data. The model uses XGBoost and is optimized using Bayesian hyperparameter tuning. The results show strong performance with an AUC score above 0.84, enabling better identification of risky loan applicants. This can help financial institutions make informed lending decisions, reduce default rates, and improve profitability. The notebook presents the process step-by-step and includes insights from the confusion matrix and feature importance to explain how the model makes decisions.
+
 ## Problem
 This project aims to build a machine learning model to predict the probability of default in wholesale lending, a key component of credit risk management.
 
