@@ -1,23 +1,17 @@
-# Model Card
+# Model Card: XGBoost for Loan Default Prediction
 
-See the [example Google model cards](https://modelcards.withgoogle.com/model-reports) for inspiration. 
+## Model Type
+- XGBoost Classifier
 
-## Model Description
+## Objective
+To predict the probability of default in wholesale loan customers.
 
-**Input:** Describe the inputs of your model 
+## Input Features
+- Loan amount, interest rate, borrower industry, loan duration, etc.
 
-**Output:** Describe the output(s) of your model
+## Output
+- Binary: 1 = default, 0 = no default
 
-**Model Architecture:** Describe the model architecture you’ve used
-
-## Performance
-
-Give a summary graph or metrics of how the model performs. Remember to include how you are measuring the performance and what data you analysed it on. 
-
-## Limitations
-
-Outline the limitations of your model.
-
-## Trade-offs
-
-Outline any trade-offs of your model, such as any circumstances where the model exhibits performance issues. 
+## Training Process
+- Bayesian Optimization using Optuna
+- 5-fold cross-validation on training set
