@@ -11,3 +11,12 @@
 - Handled missing values
 - One-hot encoded categorical features
 - Scaled numerical variables
+
+## Data Access
+
+This project uses the [Lending Club Loan Data](https://www.kaggle.com/datasets/wordsforthewise/lending-club). You can download the data directly with the script:
+
+```python
+import kagglehub
+path = kagglehub.dataset_download("wordsforthewise/lending-club")
+
